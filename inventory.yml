@@ -1,21 +1,33 @@
 ---
 all:
   hosts:
-    whitepi:
-      ansible_host: whitepi.local
-    greenpi:
-      ansible_host: greenpi.local
-    redpi:
-      ansible_host: redpi.local
-    bluepi:
-      ansible_host: bluepi.local
+    nashville:
+      ansible_host: nashville.local
+    memphis:
+      ansible_host: memphis.local
+    knoxville:
+      ansible_host: knoxville.local
+    chattanooga:
+      ansible_host: chatanooga.local
+    clarksville:
+      ansible_host: clarksville.local
+    murfreesboro:
+      ansible_host: murfreesboro.local
+    franklin:
+      ansible_host: franklin.local
+    jackson:
+      ansible_host: jackson.local
   children:
     raspberry_pi:
       hosts:
-        whitepi: {}
-        greenpi: {}
-        redpi: {}
-        bluepi: {}
+        nashville: {}
+        memphis: {}
+        knoxville: {}
+        chatanooga: {}
+        clarksville: {}
+        murfreesboro: {}
+        franklin: {}
+        jackson: {}
     k3s_coordinator:
       hosts:
         whitepi: {}
